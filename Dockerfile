@@ -23,6 +23,9 @@ RUN echo "Installing Typescript" \
 RUN echo "Installing http-server" \
 		&& npm install -g http-server
 
+RUN echo "Installing angular-cli" \
+		&& npm install -g angular-cli
+
 EXPOSE 8080
 
 WORKDIR /home
