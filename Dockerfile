@@ -24,7 +24,8 @@ RUN echo "Installing http-server" \
 		&& npm install -g http-server
 
 RUN echo "Installing angular-cli" \
-		&& npm install -g angular-cli
+		&& npm install -g angular-cli \
+		&& ng set --global warnings.packageDeprecation=false
 
 EXPOSE 8080
 
